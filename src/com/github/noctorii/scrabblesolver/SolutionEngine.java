@@ -1,15 +1,13 @@
 package com.github.noctorii.scrabblesolver;
 
-
-import java.util.List;
+import java.util.Set;
 
 public class SolutionEngine {
-    private DictionaryGraph dictionary;
     private ScoringEngine scoringEngine;
+    private Set<String> words;
+    private Set<String> subwords;
 
-
-    public SolutionEngine (List<String> dictionary, ScoringEngine scoringEngine){
-        this.dictionary = new DictionaryGraph(dictionary);
+    public SolutionEngine (Iterable<String> words, ScoringEngine scoringEngine){
         this.scoringEngine = scoringEngine;
     }
 
