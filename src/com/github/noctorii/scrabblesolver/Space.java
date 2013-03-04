@@ -27,8 +27,20 @@ public class Space {
         }
     }
 
+    public Coordinate getCoordinate (){
+        return coordinate;
+    }
+
     public Tile getTile(){
         return tile;
+    }
+
+    public int getX(){
+        return coordinate.getX();
+    }
+
+    public int getY(){
+        return coordinate.getY();
     }
 
     public ScoreMultiplier getScoreMult(){

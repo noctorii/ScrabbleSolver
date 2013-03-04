@@ -1,5 +1,6 @@
 package com.github.noctorii.scrabblesolver;
 
+import java.util.List;
 import java.util.Set;
 
 public class SolutionEngine {
@@ -12,7 +13,7 @@ public class SolutionEngine {
     }
 
     public Play solve (GameState state, Hand hand){
-
+        Set<Space> anchors = state.getAnchors();
     }
 
 }
